@@ -5,12 +5,118 @@ body, html {
     font-family: 'Arial', sans-serif;
 }
 
+
 header {
     background: #333;
     color: white;
     padding: 1rem;
 }
 header 
+.filters {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.filter-button:hover {
+    background-color: #555;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    width: calc(33% - 20px);
+    margin: 10px;
+    box-shadow: 0 0 10px #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 800px) {
+    .project {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 500px) {
+    .project {
+        width: 100%;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 0 10px;
+    background: white;
+    border: 1px solid #ddd;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: white;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
 .social-share {
     display: flex;
     justify-content: space-around;
@@ -68,5 +174,111 @@ footer {
     .navbar li {
         display: block;
         margin-top: 10px;
+    }
+}
+
+#contact {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.contact-info h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+.contact-info p, .contact-info a {
+    margin: 5px 0;
+    color: #666;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #0a7cff;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-form form {
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+#project-gallery {
+    padding: 20px;
+    text-align: center;
+}
+
+.filter-buttons {
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    margin-right: 5px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background-color: #555;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.img-wrap {
+    margin: 10px;
+    border: 1px solid #ccc;
+    display: none; /* Hidden by default */
+}
+
+.img-wrap img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.description {
+    padding: 5px;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        flex-direction: column;
     }
 }

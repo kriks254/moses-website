@@ -50,4 +50,28 @@ document.addEventListener('DOMContentLoaded', function() {
         alert('Thank you for your message!');
     });
 });
+function filterProjects(category) {
+    const projects = document.querySelectorAll('.project');
+
+    if (category === 'all') {
+        for (const project of projects) {
+            project.style.display = 'block';
+        }
+    } else {
+        for (const project of projects) {
+            project.style.display = project.classList.contains(category) ? 'block' : 'none';
+        }
+    }
+}
+function filterGallery(category) {
+    const elements = document.querySelectorAll('.img-wrap');
+
+    if (category === 'all') {
+        elements.forEach(element => element.style.display = 'block');
+    } else {
+        elements.forEach(element => {
+            element.style.display = element.classList.contains(category) ? 'block' : 'none';
+        });
+    }
+}
 

@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moses' Portfolio</title>
     <title>Portfolio of [Your Name
         MOSES]</title>
     <link rel="stylesheet" href="style.css">
 </head>This is my Portfolio
+<div class="cta-container">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Ready to start your next project?</p>
+    <a href="mailto:youremail@example.com" class="cta-button">Contact Me</a>
+</div>
+
 <body>
     cd username.github.io
 
@@ -29,7 +37,59 @@ git push -u origin main
                 <li><a href="#location">location</a></li>
 
             </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h2>Introduction</h2>
+        <p>Hello, I'm Moses, a professional in cyber work. I strive to meet the needs of cooperative partners and clients who value quality and reliability. Browse my portfolio to see examples of my dedication to excellence in cyber security and IT solutions.</p>
+        <img src= mk.jpg alt="High-Quality Work Sample">
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>This is a brief paragraph about myself, my background in cyber security, and my professional interests.</p>
+    </section>
+    <section id="projects">
+        <h2>Portfolio</h2>
+        <div class="filters">
+            <button class="filter-button" onclick="filterProjects('all')">All</button>
+            <button class="filter-button" onclick="filterProjects('cybersecurity')">Cybersecurity</button>
+            <button class="filter-button" onclick="filterProjects('software')">Software Development</button>
         </div>
+        <div class="project-container">
+            <div class="project cybersecurity">
+                <img src= Mk254.jpg> alt="Cybersecurity Project"
+                <h3>Cyber Defense System</h3>
+                <p>This project involved developing a robust cyber defense system for a financial institution.</p>
+                <p><strong>Role:</strong> Lead Security Analyst</p>
+            </div>
+            <div class="project software">
+                <img src=1713440933916.jpg alt="Software Development Project">
+                <h3>Mobile Banking App</h3>
+                <p>An innovative project to create a secure and user-friendly mobile banking application.</p>
+                <p><strong>Role:</strong> Project Manager & Lead Developer</p>
+            </div>
+            <div class="project cybersecurity">
+                <img src="cybersecurity-project2.jpg" alt="Data Encryption Project">
+                <h3>Data Encryption Project</h3>
+                <p>Developed an advanced data encryption solution to protect sensitive information.</p>
+                <p><strong>Role:</strong> Cryptographer</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        </div>
+        <div class="project">
+            <h3>Project Title</h3>
+            <p>Description of the project.</p>
+            <img src=1711643550535.jpg alt="Project Image">
+        </div>
+        <div class="cta">
+            <p>Ready to work together?</p>
+            <a href="contact.html" class="cta-button">Contact Me</a>
+        </div>
+        
     </header>
     <section id="home">
         <h1>Welcome to My Portfolio</h1>
@@ -40,6 +100,36 @@ git push -u origin main
         <h2>About Me</h2>
         <p>Description about yourself, your skills, experience, and background.</p>
     </section>
+    <section class="testimonials">
+        <h2>Client Testimonials</h2>
+        <div class="testimonial">
+            <blockquote>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat."
+            </blockquote>
+            <p class="client-info">- John Doe, CEO at XYZ Company</p>
+        </div>
+        <!-- Add more testimonials as needed -->
+    </section>
+    <section id="project-gallery">
+        <h2>My Projects</h2>
+        <div class="filter-buttons">
+            <button class="filter-btn" onclick="filterGallery('all')">All</button>
+            <button class="filter-btn" onclick="filterGallery('development')">Development</button>
+            <button class="filter-btn" onclick="filterGallery('design')">Design</button>
+        </div>
+        <div class="gallery">
+            <div class="img-wrap all development">
+                <img src=1711643659458.jpg alt="Project 1" style="width:100%">
+                <div class="description">Development Project 1</div>
+            </div>
+            <div class="img-wrap all design">
+                <img src="project2.jpg" alt="Project 2" style="width:100%">
+                <div class="description">Design Project 1</div>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+    
     <section id="portfolio">
         <h2>My Work</h2>
         <div class="gallery">
@@ -71,10 +161,52 @@ git push -u origin main
                     <img src="linkedin-icon.png" alt="Share on LinkedIn">
                 </a>
             </div>
+            <div class="testimonial">
+                <blockquote>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat."
+                </blockquote>
+                <div class="client-info">
+                    <img src=1711643672433.jpg alt="Client Avatar">
+                    <p>John Doe</p>
+                    <p>CEO at XYZ Company</p>
+                </div>
+            </div>
             
         </div>
     </section>
     <section id="contact">
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>For inquiries or project discussions, feel free to reach out through any of the following channels:</p>
+            <div class="contact-info">
+                <h3>Location</h3>
+                <p>KIJIJI CONNECT</p>
+                
+                <h3>Email</h3>
+                <p><a href="mailto:moses@example.com">moses@example.com</a></p>
+                
+                <h3>Phone</h3>
+                <p><a href="tel:+1234567890">+123 456 7890</a></p>
+                
+                <h3>Follow Me</h3>
+                <p>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
+                    <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a> |
+                    <a href="https://behance.net/yourprofile" target="_blank">Behance</a> |
+                    <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+                </p>
+            </div>
+            <div class="contact-form">
+                <h3>Send a Message</h3>
+                <form action="submit_form.php" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+        
         <h2>Contact Me</h2>
        
         <form id="contact-form">
